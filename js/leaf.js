@@ -20,14 +20,17 @@
   var COLS = GRID[0].length;
   var ROWS = GRID.length;
 
+  var footer = document.querySelector("footer.site-footer");
+  if (!footer || !footer.parentNode) return;
+
   var container = document.createElement("div");
-  container.className = "leaf-widget";
+  container.className = "leaf-strip";
 
   var svg = document.createElementNS(SVG_NS, "svg");
   svg.setAttribute("viewBox", "0 0 " + COLS + " " + ROWS);
-  svg.setAttribute("class", "leaf falling");
+  svg.setAttribute("class", "leaf drifting");
   svg.setAttribute("role", "button");
-  svg.setAttribute("aria-label", "falling leaf, click for a surprise");
+  svg.setAttribute("aria-label", "drifting leaf, click for a surprise");
 
   var hitArea = document.createElementNS(SVG_NS, "rect");
   hitArea.setAttribute("x", "0");
@@ -53,7 +56,7 @@
   });
 
   container.appendChild(svg);
-  document.body.appendChild(container);
+  footer.parentNode.insertBefore(container, footer);
 
   function respawn() {
     svg.style.top = "";
@@ -62,7 +65,7 @@
     svg.style.visibility = "";
     svg.classList.remove("poof");
     void svg.getBoundingClientRect();
-    svg.classList.add("falling");
+    svg.classList.add("drifting");
   }
 
   svg.addEventListener("click", function () {
@@ -74,7 +77,7 @@
     svg.style.left = leafRect.left - containerRect.left + "px";
     svg.style.transform = "none";
 
-    svg.classList.remove("falling");
+    svg.classList.remove("drifting");
     svg.classList.add("poof");
   });
 

@@ -95,6 +95,9 @@ a:hover {
 }
 
 .links a {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
   color: var(--muted);
   text-decoration: none;
   border: 1px solid var(--border);
@@ -106,6 +109,13 @@ a:hover {
 .links a:hover {
   color: var(--accent);
   border-color: var(--accent);
+}
+
+.links .icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  shape-rendering: crispEdges;
 }
 
 .review-entry {
@@ -175,49 +185,52 @@ footer.site-footer {
   font-size: 0.85rem;
 }
 
-/* Falling pixel leaf */
+/* Wind-blown pixel leaf, drifting above the footer divider */
 
-.leaf-widget {
-  position: fixed;
-  right: 16px;
-  bottom: 0;
-  width: 120px;
-  height: 50vh;
+.leaf-strip {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  margin-top: 0.5rem;
   overflow: hidden;
   pointer-events: none;
-  z-index: 50;
 }
 
 .leaf {
   position: absolute;
-  top: -44px;
-  left: 50%;
-  width: 36px;
-  height: 44px;
-  margin-left: -18px;
+  top: 16px;
+  left: -10%;
+  width: 28px;
+  height: 34px;
   cursor: pointer;
   pointer-events: auto;
   shape-rendering: crispEdges;
 }
 
-.leaf.falling {
+.leaf.drifting {
   animation:
-    leaf-fall 7s linear infinite,
-    leaf-sway 2.4s ease-in-out infinite alternate;
+    leaf-drift-x 9s linear infinite,
+    leaf-zigzag-y 2s ease-in-out infinite;
 }
 
 .leaf.poof {
   animation: leaf-poof 0.5s ease-out forwards;
 }
 
-@keyframes leaf-fall {
-  0% { top: -44px; }
-  100% { top: calc(50vh - 44px); }
+@keyframes leaf-drift-x {
+  0% { left: -10%; }
+  100% { left: 110%; }
 }
 
-@keyframes leaf-sway {
-  0% { transform: translateX(-16px) rotate(-14deg); }
-  100% { transform: translateX(16px) rotate(14deg); }
+@keyframes leaf-zigzag-y {
+  0% { transform: translateY(0) rotate(-10deg); }
+  15% { transform: translateY(-14px) rotate(8deg); }
+  30% { transform: translateY(2px) rotate(-10deg); }
+  45% { transform: translateY(-10px) rotate(10deg); }
+  60% { transform: translateY(4px) rotate(-6deg); }
+  75% { transform: translateY(-12px) rotate(9deg); }
+  90% { transform: translateY(0) rotate(-8deg); }
+  100% { transform: translateY(0) rotate(-10deg); }
 }
 
 @keyframes leaf-poof {
@@ -227,7 +240,7 @@ footer.site-footer {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .leaf-widget {
+  .leaf-strip {
     display: none;
   }
 }
