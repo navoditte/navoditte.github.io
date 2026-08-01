@@ -199,7 +199,7 @@ footer.site-footer {
 .leaf {
   position: absolute;
   top: 16px;
-  left: -10%;
+  left: 0;
   width: 28px;
   height: 34px;
   cursor: pointer;
@@ -208,29 +208,19 @@ footer.site-footer {
 }
 
 .leaf.drifting {
-  animation:
-    leaf-drift-x 9s linear infinite,
-    leaf-zigzag-y 2s ease-in-out infinite;
+  animation: leaf-drift 14s ease-in-out infinite;
 }
 
 .leaf.poof {
   animation: leaf-poof 0.5s ease-out forwards;
 }
 
-@keyframes leaf-drift-x {
-  0% { left: -10%; }
-  100% { left: 110%; }
-}
-
-@keyframes leaf-zigzag-y {
-  0% { transform: translateY(0) rotate(-10deg); }
-  15% { transform: translateY(-14px) rotate(8deg); }
-  30% { transform: translateY(2px) rotate(-10deg); }
-  45% { transform: translateY(-10px) rotate(10deg); }
-  60% { transform: translateY(4px) rotate(-6deg); }
-  75% { transform: translateY(-12px) rotate(9deg); }
-  90% { transform: translateY(0) rotate(-8deg); }
-  100% { transform: translateY(0) rotate(-10deg); }
+@keyframes leaf-drift {
+  0%   { transform: translate(calc(var(--drift-w, 600px) * -0.08), 0) rotate(-8deg); }
+  25%  { transform: translate(calc(var(--drift-w, 600px) * 0.22), -12px) rotate(6deg); }
+  50%  { transform: translate(calc(var(--drift-w, 600px) * 0.50), 4px) rotate(-6deg); }
+  75%  { transform: translate(calc(var(--drift-w, 600px) * 0.78), -8px) rotate(8deg); }
+  100% { transform: translate(calc(var(--drift-w, 600px) * 1.08), 0) rotate(-8deg); }
 }
 
 @keyframes leaf-poof {

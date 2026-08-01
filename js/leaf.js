@@ -58,6 +58,12 @@
   container.appendChild(svg);
   footer.parentNode.insertBefore(container, footer);
 
+  function syncDriftWidth() {
+    container.style.setProperty("--drift-w", container.getBoundingClientRect().width + "px");
+  }
+  syncDriftWidth();
+  window.addEventListener("resize", syncDriftWidth);
+
   function respawn() {
     svg.style.top = "";
     svg.style.left = "";
