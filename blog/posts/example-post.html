@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Example post title — navo-das</title>
+  <title>Example review title — navo-das</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
@@ -12,18 +15,22 @@
       <a class="brand" href="../../index.html">navo-das</a>
       <nav class="site-nav">
         <a href="../../index.html">Home</a>
-        <a href="../../projects/index.html">Projects</a>
         <a href="../index.html" class="active">Blog</a>
       </nav>
     </header>
 
     <main>
-      <h1>Example post title</h1>
-      <span class="post-date">January 1, 2026</span>
+      <span class="review-category">Book</span>
+      <h1>Example review title</h1>
+
+      <div class="review-meta">
+        <span class="review-rating">★★★★☆ (4/5)</span>
+        <span class="post-date">January 1, 2026</span>
+      </div>
 
       <p>
-        This is a placeholder post. Replace this file's content with your own
-        writing, then add a matching entry to <code>blog/index.html</code>
+        This is a placeholder review. Replace this file's content with your
+        own writing, then add a matching entry to <code>blog/index.html</code>
         pointing at it.
       </p>
     </main>
@@ -32,5 +39,7 @@
       &copy; 2026 navo-das
     </footer>
   </div>
+
+  <script src="../../js/leaf.js" defer></script>
 </body>
 </html>

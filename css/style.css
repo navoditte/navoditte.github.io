@@ -1,9 +1,10 @@
 :root {
-  --bg: #ffffff;
-  --text: #1a1a1a;
-  --muted: #6b6b6b;
-  --accent: #b1502e;
-  --border: #e6e6e6;
+  --bg: #f7f1e1;
+  --text: #2e2a20;
+  --muted: #7a715c;
+  --accent: #3f7d4c;
+  --leaf-green: #4f9d5c;
+  --border: #e4d9bd;
   --max-width: 640px;
 }
 
@@ -16,7 +17,7 @@ body {
   padding: 0 1.5rem;
   background: var(--bg);
   color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: "Spline Sans Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
   line-height: 1.6;
 }
 
@@ -35,7 +36,7 @@ header.site-header {
 header.site-header a.brand {
   font-weight: 600;
   font-size: 1.1rem;
-  color: var(--text);
+  color: var(--accent);
   text-decoration: none;
 }
 
@@ -48,12 +49,16 @@ nav.site-nav a {
 
 nav.site-nav a:hover,
 nav.site-nav a.active {
-  color: var(--text);
+  color: var(--accent);
 }
 
 main {
   padding: 1rem 0 3rem;
   min-height: 50vh;
+}
+
+h1, h2, h3 {
+  color: var(--accent);
 }
 
 h1 {
@@ -79,6 +84,11 @@ a {
   color: var(--accent);
 }
 
+a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
 .links {
   margin-top: 1.5rem;
   display: flex;
@@ -99,41 +109,59 @@ a {
   border-color: var(--accent);
 }
 
-.project-card,
-.post-entry {
+.review-entry {
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 1.25rem;
   margin-bottom: 1rem;
 }
 
-.project-card h3,
-.post-entry h3 {
+.review-category {
+  display: inline-block;
+  color: var(--accent);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.4rem;
+}
+
+.review-entry h3 {
   margin: 0 0 0.4rem;
   font-size: 1.05rem;
 }
 
-.project-card p,
-.post-entry .excerpt {
+.review-entry .excerpt {
   color: var(--muted);
   margin: 0;
   font-size: 0.95rem;
 }
 
-.post-entry a.title-link {
+.review-entry a.title-link {
   color: var(--text);
   text-decoration: none;
 }
 
-.post-entry a.title-link:hover {
+.review-entry a.title-link:hover {
   color: var(--accent);
+}
+
+.review-rating {
+  color: var(--accent);
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-bottom: 0.4rem;
+}
+
+.review-meta {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
 }
 
 .post-date {
   color: var(--muted);
   font-size: 0.85rem;
-  margin-bottom: 1.5rem;
-  display: block;
 }
 
 .empty-state {
@@ -146,4 +174,98 @@ footer.site-footer {
   padding: 1.5rem 0 2.5rem;
   color: var(--muted);
   font-size: 0.85rem;
+}
+
+/* Falling pixel leaf */
+
+.leaf-widget {
+  position: fixed;
+  right: 16px;
+  bottom: 0;
+  width: 120px;
+  height: 50vh;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 50;
+}
+
+.leaf {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background: var(--leaf-green);
+  box-shadow:
+    4px 0 0 var(--leaf-green),
+    -4px 4px 0 var(--leaf-green),
+    0 4px 0 var(--leaf-green),
+    4px 4px 0 var(--leaf-green),
+    8px 4px 0 var(--leaf-green),
+    -8px 8px 0 var(--leaf-green),
+    -4px 8px 0 var(--leaf-green),
+    0 8px 0 var(--leaf-green),
+    4px 8px 0 var(--leaf-green),
+    8px 8px 0 var(--leaf-green),
+    12px 8px 0 var(--leaf-green),
+    -8px 12px 0 var(--leaf-green),
+    -4px 12px 0 var(--leaf-green),
+    0 12px 0 var(--leaf-green),
+    4px 12px 0 var(--leaf-green),
+    8px 12px 0 var(--leaf-green),
+    12px 12px 0 var(--leaf-green),
+    16px 12px 0 var(--leaf-green),
+    -4px 16px 0 var(--leaf-green),
+    0 16px 0 var(--leaf-green),
+    4px 16px 0 var(--leaf-green),
+    8px 16px 0 var(--leaf-green),
+    12px 16px 0 var(--leaf-green),
+    16px 16px 0 var(--leaf-green),
+    20px 16px 0 var(--leaf-green),
+    0 20px 0 var(--leaf-green),
+    4px 20px 0 var(--leaf-green),
+    8px 20px 0 var(--leaf-green),
+    12px 20px 0 var(--leaf-green),
+    16px 20px 0 var(--leaf-green),
+    20px 20px 0 var(--leaf-green),
+    4px 24px 0 var(--leaf-green),
+    8px 24px 0 var(--leaf-green),
+    12px 24px 0 var(--leaf-green),
+    16px 24px 0 var(--leaf-green),
+    8px 28px 0 var(--leaf-green),
+    12px 28px 0 var(--leaf-green);
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.leaf.falling {
+  animation:
+    leaf-fall 7s linear infinite,
+    leaf-sway 2.4s ease-in-out infinite alternate;
+}
+
+.leaf.poof {
+  animation: leaf-poof 0.5s ease-out forwards;
+}
+
+@keyframes leaf-fall {
+  0% { top: -40px; }
+  100% { top: calc(50vh - 20px); }
+}
+
+@keyframes leaf-sway {
+  0% { transform: translateX(-16px) rotate(-14deg); }
+  100% { transform: translateX(16px) rotate(14deg); }
+}
+
+@keyframes leaf-poof {
+  0% { transform: scale(1) rotate(0deg); opacity: 1; }
+  60% { transform: scale(1.7) rotate(30deg); opacity: 0.55; }
+  100% { transform: scale(2.4) rotate(55deg); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .leaf-widget {
+    display: none;
+  }
 }
