@@ -7,7 +7,7 @@
     "....L....",
     "...LLL...",
     "..LLLLL..",
-    ".LLLLLLL.",
+    "L.LLLLL.L",
     "LLLLLLLLL",
     "LLLLVLLLL",
     ".LLLVLLL.",
