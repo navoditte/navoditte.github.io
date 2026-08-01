@@ -1,0 +1,149 @@
+:root {
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --muted: #6b6b6b;
+  --accent: #b1502e;
+  --border: #e6e6e6;
+  --max-width: 640px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 1.5rem;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+header.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 0 1.5rem;
+}
+
+header.site-header a.brand {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--text);
+  text-decoration: none;
+}
+
+nav.site-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 1.25rem;
+  font-size: 0.95rem;
+}
+
+nav.site-nav a:hover,
+nav.site-nav a.active {
+  color: var(--text);
+}
+
+main {
+  padding: 1rem 0 3rem;
+  min-height: 50vh;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
+
+p {
+  color: var(--text);
+}
+
+p.tagline {
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+a {
+  color: var(--accent);
+}
+
+.links {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.links a {
+  color: var(--muted);
+  text-decoration: none;
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.links a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.project-card,
+.post-entry {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.project-card h3,
+.post-entry h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.05rem;
+}
+
+.project-card p,
+.post-entry .excerpt {
+  color: var(--muted);
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.post-entry a.title-link {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.post-entry a.title-link:hover {
+  color: var(--accent);
+}
+
+.post-date {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.empty-state {
+  color: var(--muted);
+  font-style: italic;
+}
+
+footer.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 0 2.5rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
