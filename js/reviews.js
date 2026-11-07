@@ -10,7 +10,7 @@
   };
 
   // Muted spine colours that sit well on cream; text colour is picked per spine.
-  var TEXTURES = ["t-cloth", "t-linen", "t-cloth", "t-plain", "t-linen", "t-gloss"];
+  var TEXTURES = ["t-cloth", "t-linen"];
   var PALETTE = ["#3f7d4c", "#7a3b3b", "#2f4a6b", "#b8862f", "#a4532f", "#5a3d6b", "#4a5d3a", "#2e5a5a", "#6b4a2f", "#8a3f5a"];
 
   var state = { books: [], sort: "recent", tags: [], view: "shelf", openId: "" };
@@ -117,7 +117,7 @@
   // ---- rendering -----------------------------------------------------------
 
   function spineHeight(b) {
-    return b.pages ? Math.max(34, Math.min(84, Math.round(26 + b.pages / 11))) : 46;
+    return b.pages ? Math.max(30, Math.min(90, Math.round(14 + b.pages / 7))) : 46;
   }
 
   function renderSpine(b) {

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reviews — navo-das</title>
+  <title>Books — navo-das</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -11,20 +11,42 @@
   <link rel="stylesheet" href="../css/reviews.css">
 </head>
 <body>
+<!--
+  AGENT NOTES (not rendered). For AI coding agents maintaining this repo; visitors can ignore.
+
+  When a new book is added to data/books.json, enrich it from Waterstones (UK edition):
+
+  1. Search: https://www.waterstones.com/books/search/term/<title+author>. Decline cookies
+     (reject non-essential). Take the top result whose URL slug matches both the title and
+     the author: /book/<title-slug>/<author-slug>/<isbn13>. If nothing matches, say so and
+     leave the book as is rather than guessing.
+  2. Length: read the page count from that product page ("N Pages") and set "pages".
+     If the owner states a page count, theirs wins. Also fill "author" and "year" if missing.
+     Spine thickness is derived from pages (see spineHeight in js/reviews.js).
+  3. UK cover: the jacket image is
+     https://cdn.waterstones.com/bookjackets/large/<isbn[0:4]>/<isbn[4:8]>/<isbn>.jpg
+     Look at it. Set "color" (6-digit hex) to the jacket's main colour. Computing it with
+     dominant() from scripts/spine-colors.py is a good start, but check it against the image
+     and override by eye if it picks an accent rather than the main colour.
+     The "cover" field (sidebar image) comes from Open Library by default (cover id URL);
+     only use the Waterstones jacket URL there if the owner has said hotlinking is fine.
+  4. Never invent "rating", "read" or "review". Leave them blank if not given.
+  5. Reload with a hard refresh to check; the browser caches JSON and CSS aggressively.
+-->
   <div class="wrapper">
     <header class="site-header">
       <a class="brand" href="../index.html">navo-das</a>
       <nav class="site-nav">
         <a href="../index.html">Home</a>
-        <a href="index.html" class="active">Reviews</a>
+        <a href="index.html" class="active">Books</a>
       </nav>
     </header>
 
     <main>
-      <h1>Reviews</h1>
-      <p class="tagline">Books I've read. Click a spine for the review.</p>
+      <h1>Books</h1>
+      <p class="tagline">Books I've read.</p>
 
-      <section class="charts" aria-label="Reading stats">
+      <section class="charts" aria-label="Reading stats" hidden>
         <figure class="chart">
           <figcaption>Ratings</figcaption>
           <div id="chart-ratings"></div>

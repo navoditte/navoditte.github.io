@@ -186,6 +186,10 @@
   margin: 1.5rem 0 0;
 }
 
+.charts[hidden] {
+  display: none;
+}
+
 .chart {
   margin: 0;
   min-width: 0;
