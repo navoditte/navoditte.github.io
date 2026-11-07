@@ -1,12 +1,43 @@
+/* Search */
+
+.tagline {
+  margin-bottom: 0.6rem;
+}
+
+.search {
+  margin: 0;
+}
+
+.search input {
+  width: 100%;
+  font: inherit;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.7rem;
+}
+
+.search input::placeholder {
+  color: var(--muted);
+}
+
+.search input:hover,
+.search input:focus-visible {
+  border-color: var(--accent);
+  outline: none;
+}
+
 /* Controls */
 
 .controls {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.75rem 1rem;
-  margin: 1.5rem 0 0.75rem;
-  font-size: 0.767rem;
+  gap: 0.5rem 0.75rem;
+  margin: 0.6rem 0 0.4rem;
+  font-size: 0.7rem;
 }
 
 .controls label {
@@ -19,7 +50,7 @@
   background: var(--bg);
   border: 1px solid var(--border);
   border-radius: 6px;
-  padding: 0.3rem 0.5rem;
+  padding: 0.2rem 0.4rem;
 }
 
 .controls select:hover,
@@ -38,7 +69,7 @@
   color: var(--muted);
   background: none;
   border: 1px solid var(--border);
-  padding: 0.3rem 0.7rem;
+  padding: 0.2rem 0.55rem;
   cursor: pointer;
 }
 
@@ -74,8 +105,8 @@
 
 .count {
   color: var(--muted);
-  font-size: 0.717rem;
-  margin: 0 0 1.25rem;
+  font-size: 0.65rem;
+  margin: 0 0 0.9rem;
 }
 
 /* Tag multiselect */
@@ -90,7 +121,7 @@
   background: var(--bg);
   border: 1px solid var(--border);
   border-radius: 6px;
-  padding: 0.3rem 0.6rem;
+  padding: 0.2rem 0.5rem;
   cursor: pointer;
 }
 
@@ -305,7 +336,8 @@
     inset 0 0 0 1px rgba(0, 0, 0, 0.12),
     0 7px 12px -7px rgba(46, 42, 32, 0.5);
   transition:
-    transform 0.28s cubic-bezier(0.2, 0.8, 0.2, 1),
+    translate 0.28s cubic-bezier(0.2, 0.8, 0.2, 1),
+    scale 0.28s cubic-bezier(0.2, 0.8, 0.2, 1),
     box-shadow 0.28s ease,
     opacity 0.2s ease,
     filter 0.2s ease,
@@ -365,12 +397,14 @@
 .spine.selected {
   --sheen: -40%;
   transition:
-    transform 0.28s cubic-bezier(0.2, 0.8, 0.2, 1),
+    translate 0.28s cubic-bezier(0.2, 0.8, 0.2, 1),
+    scale 0.28s cubic-bezier(0.2, 0.8, 0.2, 1),
     box-shadow 0.28s ease,
     opacity 0.2s ease,
     filter 0.2s ease,
     --sheen 1.9s ease-out;
-  transform: translateY(-7px) scale(1.025);
+  translate: 0 -7px;
+  scale: 1.025;
   z-index: 2;
   box-shadow:
     inset 0 -3px 0 rgba(0, 0, 0, 0.2),
@@ -649,4 +683,21 @@
   .backdrop {
     transition: none;
   }
+}
+
+/* Footer credit */
+
+.footer-note {
+  margin: 0.4rem 0 0;
+  color: var(--muted);
+  font-size: 0.6rem;
+  opacity: 0.8;
+}
+
+.footer-note a {
+  color: inherit;
+}
+
+.footer-note a:hover {
+  color: var(--accent);
 }

@@ -13,7 +13,7 @@
   var TEXTURES = ["t-cloth", "t-linen"];
   var PALETTE = ["#3f7d4c", "#7a3b3b", "#2f4a6b", "#b8862f", "#a4532f", "#5a3d6b", "#4a5d3a", "#2e5a5a", "#6b4a2f", "#8a3f5a"];
 
-  var state = { books: [], sort: "recent", tags: [], view: "shelf", openId: "" };
+  var state = { books: [], sort: "recent", tags: [], query: "", view: "shelf", openId: "" };
   var SVG_NS = "http://www.w3.org/2000/svg";
   var REDUCED = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var els = {};
@@ -52,6 +52,10 @@
     return n >>> 0;
   }
 
+  function fold(s) {
+    return String(s).normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  }
+
   function slugify(s) {
     return String(s).normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase()
       .replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "") || "book";
@@ -78,7 +82,7 @@
     seen[base] = n + 1;
     var rating = parseFloat(raw.rating);
     var review = Array.isArray(raw.review) ? raw.review : raw.review ? String(raw.review).split(/\n{2,}/) : [];
-    return {
+    var book = {
       id: raw.id ? slugify(raw.id) : n ? base + "-" + (n + 1) : base,
       title: title,
       author: String(raw.author || "").trim(),
@@ -95,6 +99,8 @@
       color: /^#[0-9a-f]{6}$/i.test(raw.color || "") ? raw.color : "",
       links: (Array.isArray(raw.links) ? raw.links : []).filter(function (l) { return l && /^https?:\/\//.test(l.href || ""); })
     };
+    book.hay = fold([book.title, book.author, book.year, book.tags.join(" "), book.review.join(" ")].join(" "));
+    return book;
   }
 
   function stars(rating) {
@@ -108,9 +114,15 @@
 
   // ---- derived view --------------------------------------------------------
 
+  function matchesQuery(b) {
+    if (!state.query) return true;
+    return fold(state.query).split(/\s+/).filter(Boolean).every(function (term) { return b.hay.indexOf(term) !== -1; });
+  }
+
   function visibleBooks() {
     return state.books
       .filter(function (b) { return state.tags.every(function (t) { return b.tags.indexOf(t) !== -1; }); })
+      .filter(matchesQuery)
       .sort(SORTS[state.sort].cmp);
   }
 
@@ -268,11 +280,11 @@
     var list = visibleBooks();
     renderControls();
     renderCharts(list);
-    els.count.textContent = list.length + (list.length === 1 ? " book" : " books") + (state.tags.length ? " · " + state.tags.join(" + ") : "");
+    els.count.textContent = list.length + (list.length === 1 ? " book" : " books") + (state.tags.length ? " · " + state.tags.join(" + ") : "") + (state.query ? " · \u201c" + state.query.trim() + "\u201d" : "");
     els.shelf.textContent = "";
     els.shelf.className = "shelf view-" + state.view;
     if (!list.length) {
-      els.shelf.appendChild(h("p", { class: "empty-state", text: state.books.length ? "No books match all of those tags." : "No books yet." }));
+      els.shelf.appendChild(h("p", { class: "empty-state", text: state.books.length ? "No books match." : "No books yet." }));
       buildRail();
       return;
     }
@@ -432,6 +444,7 @@
 
   function boot() {
     els.sort = document.getElementById("sort");
+    els.search = document.getElementById("search");
     els.tagMenu = document.getElementById("tag-menu");
     els.tagBtn = document.getElementById("tag-btn");
     els.tagBadge = document.getElementById("tag-badge");
@@ -458,6 +471,11 @@
 
     try { state.view = localStorage.getItem("reviews-view") === "list" ? "list" : "shelf"; } catch (e) {}
 
+    els.search.addEventListener("input", function () { state.query = els.search.value; render(); });
+    document.addEventListener("keydown", function (e) {
+      var typing = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement && document.activeElement.tagName);
+      if (e.key === "/" && !typing && !e.metaKey && !e.ctrlKey) { e.preventDefault(); els.search.focus(); }
+    });
     els.sort.addEventListener("change", function () { state.sort = els.sort.value; render(); });
     els.views.addEventListener("click", function (e) {
       var b = e.target.closest("button[data-view]");
@@ -473,6 +491,7 @@
     els.backdrop.addEventListener("click", function () { closeBook(true); });
     document.addEventListener("keydown", function (e) {
       if (e.key !== "Escape") return;
+      if (document.activeElement === els.search && els.search.value) { els.search.value = ""; state.query = ""; render(); return; }
       if (!els.tagPanel.hidden) { setTagMenu(false); els.tagBtn.focus(); return; }
       closeBook(true);
     });
