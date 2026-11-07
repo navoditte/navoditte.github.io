@@ -445,6 +445,7 @@
   function boot() {
     els.sort = document.getElementById("sort");
     els.search = document.getElementById("search");
+    if (window.matchMedia("(hover: none)").matches) els.search.placeholder = "Search title, author, genre…";
     els.tagMenu = document.getElementById("tag-menu");
     els.tagBtn = document.getElementById("tag-btn");
     els.tagBadge = document.getElementById("tag-badge");

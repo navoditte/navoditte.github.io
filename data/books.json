@@ -1132,7 +1132,8 @@
     "tags": [],
     "cover": "https://covers.openlibrary.org/b/id/15243727-M.jpg",
     "review": [],
-    "color": "#0134a0"
+    "color": "#0134a0",
+    "pages": 168
   },
   {
     "title": "Siddhartha",
@@ -1179,7 +1180,8 @@
     "tags": [],
     "cover": "https://covers.openlibrary.org/b/id/15247551-M.jpg",
     "review": [],
-    "color": "#333d47"
+    "color": "#333d47",
+    "pages": 144
   },
   {
     "title": "Leaving the Atocha Station",
