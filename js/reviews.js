@@ -13,7 +13,7 @@
   var TEXTURES = ["t-cloth", "t-linen"];
   var PALETTE = ["#3f7d4c", "#7a3b3b", "#2f4a6b", "#b8862f", "#a4532f", "#5a3d6b", "#4a5d3a", "#2e5a5a", "#6b4a2f", "#8a3f5a"];
 
-  var state = { books: [], sort: "recent", tags: [], query: "", view: "shelf", openId: "" };
+  var state = { books: [], sort: "recent", query: "", view: "shelf", openId: "" };
   var SVG_NS = "http://www.w3.org/2000/svg";
   var REDUCED = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var els = {};
@@ -121,7 +121,6 @@
 
   function visibleBooks() {
     return state.books
-      .filter(function (b) { return state.tags.every(function (t) { return b.tags.indexOf(t) !== -1; }); })
       .filter(matchesQuery)
       .sort(SORTS[state.sort].cmp);
   }
@@ -174,43 +173,9 @@
     }
     select.value = state.sort;
 
-    syncTagMenu();
-
     Array.prototype.forEach.call(els.views.querySelectorAll("button"), function (b) {
       b.setAttribute("aria-pressed", String(b.getAttribute("data-view") === state.view));
     });
-  }
-
-  // ---- genre / theme multiselect ---------------------------------------------
-
-  function buildTagMenu() {
-    var counts = {};
-    state.books.forEach(function (b) { b.tags.forEach(function (t) { counts[t] = (counts[t] || 0) + 1; }); });
-    var names = Object.keys(counts).sort(function (a, b) { return counts[b] - counts[a] || a.localeCompare(b); });
-    els.tagMenu.hidden = !names.length;
-    els.tagList.textContent = "";
-    names.forEach(function (t) {
-      var input = h("input", { type: "checkbox", value: t });
-      input.addEventListener("change", function () {
-        state.tags = Array.prototype.map.call(els.tagList.querySelectorAll("input:checked"), function (i) { return i.value; });
-        render();
-      });
-      els.tagList.appendChild(h("label", { class: "tag-option" }, [
-        input, h("span", { class: "tag-name", text: t }), h("span", { class: "tag-count", text: String(counts[t]) })
-      ]));
-    });
-  }
-
-  function syncTagMenu() {
-    Array.prototype.forEach.call(els.tagList.querySelectorAll("input"), function (i) { i.checked = state.tags.indexOf(i.value) !== -1; });
-    els.tagBadge.textContent = state.tags.length ? String(state.tags.length) : "";
-    els.tagBtn.classList.toggle("active", !!state.tags.length);
-    els.tagClear.hidden = !state.tags.length;
-  }
-
-  function setTagMenu(open) {
-    els.tagPanel.hidden = !open;
-    els.tagBtn.setAttribute("aria-expanded", String(open));
   }
 
   // ---- charts ----------------------------------------------------------------
@@ -280,7 +245,7 @@
     var list = visibleBooks();
     renderControls();
     renderCharts(list);
-    els.count.textContent = list.length + (list.length === 1 ? " book" : " books") + (state.tags.length ? " · " + state.tags.join(" + ") : "") + (state.query ? " · \u201c" + state.query.trim() + "\u201d" : "");
+    els.count.textContent = list.length + (list.length === 1 ? " book" : " books") + (state.query ? " · \u201c" + state.query.trim() + "\u201d" : "");
     els.shelf.textContent = "";
     els.shelf.className = "shelf view-" + state.view;
     if (!list.length) {
@@ -378,10 +343,7 @@
     if (b.tags.length) {
       var tagWrap = h("div", { class: "panel-tags" });
       b.tags.forEach(function (t) {
-        tagWrap.appendChild(h("button", {
-          type: "button", class: "chip", text: t,
-          onclick: function () { state.tags = [t]; render(); }
-        }));
+        tagWrap.appendChild(h("span", { class: "chip static", text: t }));
       });
       p.appendChild(tagWrap);
     }
@@ -446,12 +408,6 @@
     els.sort = document.getElementById("sort");
     els.search = document.getElementById("search");
     if (window.matchMedia("(hover: none)").matches) els.search.placeholder = "Search title, author, genre…";
-    els.tagMenu = document.getElementById("tag-menu");
-    els.tagBtn = document.getElementById("tag-btn");
-    els.tagBadge = document.getElementById("tag-badge");
-    els.tagPanel = document.getElementById("tag-panel");
-    els.tagList = document.getElementById("tag-list");
-    els.tagClear = document.getElementById("tag-clear");
     els.chartRatings = document.getElementById("chart-ratings");
     els.chartMonths = document.getElementById("chart-months");
     els.views = document.getElementById("views");
@@ -485,15 +441,11 @@
       try { localStorage.setItem("reviews-view", state.view); } catch (err) {}
       render();
     });
-    els.tagBtn.addEventListener("click", function () { setTagMenu(els.tagPanel.hidden); });
-    els.tagClear.addEventListener("click", function () { state.tags = []; render(); });
-    document.addEventListener("click", function (e) { if (!els.tagPanel.hidden && !els.tagMenu.contains(e.target)) setTagMenu(false); });
     els.panelClose.addEventListener("click", function () { closeBook(true); });
     els.backdrop.addEventListener("click", function () { closeBook(true); });
     document.addEventListener("keydown", function (e) {
       if (e.key !== "Escape") return;
       if (document.activeElement === els.search && els.search.value) { els.search.value = ""; state.query = ""; render(); return; }
-      if (!els.tagPanel.hidden) { setTagMenu(false); els.tagBtn.focus(); return; }
       closeBook(true);
     });
     window.addEventListener("hashchange", route);
@@ -503,7 +455,6 @@
       .then(function (data) {
         var seen = {};
         state.books = (Array.isArray(data) ? data : data.books || []).map(function (raw) { return normalize(raw, seen); }).filter(Boolean);
-        buildTagMenu();
         render();
         route();
       })
