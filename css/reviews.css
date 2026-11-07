@@ -704,12 +704,12 @@
   color: var(--accent);
 }
 
-/* Phones: 16px controls (iOS zooms the page on focus below that) and a tidy grid */
+/* Phones: a tidy two-column controls grid */
 
 @media (max-width: 600px) {
   .search input {
-    font-size: 16px;
-    padding: 0.5rem 0.7rem;
+    font-size: 12px;
+    padding: 0.45rem 0.7rem;
   }
 
   .controls {
@@ -717,7 +717,7 @@
     grid-template-columns: 1.25fr 1fr;
     gap: 0.5rem;
     margin: 0.5rem 0 0.5rem;
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .controls label {
@@ -727,14 +727,10 @@
   .controls select,
   .tag-btn {
     width: 100%;
-    height: 40px;
+    height: 34px;
     padding: 0 0.5rem;
     text-align: left;
     white-space: nowrap;
-  }
-
-  .hide-sm {
-    display: none;
   }
 
   .view-toggle {
