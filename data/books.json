@@ -1,0 +1,1254 @@
+[
+  {
+    "title": "Reflections in a Golden Eye",
+    "author": "Carson McCullers",
+    "year": 1941,
+    "pages": 136,
+    "rating": 4.5,
+    "read": "2026-08-01",
+    "tags": [
+      "classics",
+      "lgbtqia+"
+    ],
+    "moods": [
+      "dark",
+      "mysterious",
+      "tense"
+    ],
+    "pace": "medium-paced",
+    "cover": "https://covers.openlibrary.org/b/id/6627938-M.jpg",
+    "review": [
+      "Short and extremely sweet."
+    ],
+    "color": "#7fbab8"
+  },
+  {
+    "title": "Exemplary Humans",
+    "author": "Juliana Leite",
+    "year": 2022,
+    "pages": 299,
+    "rating": 4.0,
+    "read": "2026-07-07",
+    "tags": [
+      "literary"
+    ],
+    "moods": [
+      "adventurous",
+      "emotional",
+      "reflective"
+    ],
+    "pace": "medium-paced",
+    "review": [],
+    "color": "#ddd5b8"
+  },
+  {
+    "title": "Madonna in a Fur Coat",
+    "author": "Sabahattin Ali",
+    "year": 1943,
+    "pages": 160,
+    "rating": 3.75,
+    "read": "2026-07-01",
+    "tags": [
+      "classics",
+      "literary",
+      "romance"
+    ],
+    "moods": [
+      "emotional",
+      "reflective",
+      "sad"
+    ],
+    "pace": "medium-paced",
+    "cover": "https://covers.openlibrary.org/b/id/12762238-M.jpg",
+    "review": [],
+    "color": "#51483f"
+  },
+  {
+    "title": "The Trees",
+    "author": "Percival Everett",
+    "year": 2021,
+    "pages": 308,
+    "rating": 4.0,
+    "read": "2026-05-05",
+    "tags": [
+      "literary",
+      "mystery",
+      "thriller"
+    ],
+    "moods": [
+      "dark",
+      "funny",
+      "mysterious"
+    ],
+    "pace": "fast-paced",
+    "cover": "https://covers.openlibrary.org/b/id/11137872-M.jpg",
+    "review": [],
+    "color": "#c71022"
+  },
+  {
+    "title": "Paradais",
+    "author": "Fernanda Melchor",
+    "year": 2021,
+    "pages": 118,
+    "rating": 3.5,
+    "read": "2026-04-15",
+    "tags": [
+      "contemporary",
+      "crime",
+      "literary"
+    ],
+    "moods": [
+      "challenging",
+      "dark",
+      "tense"
+    ],
+    "pace": "fast-paced",
+    "cover": "https://covers.openlibrary.org/b/id/14857511-M.jpg",
+    "review": [],
+    "color": "#0234a0"
+  },
+  {
+    "title": "Drive Your Plow Over the Bones of the Dead",
+    "author": "Olga Tokarczuk",
+    "year": 2009,
+    "pages": 274,
+    "rating": 4.0,
+    "read": "2026-03-29",
+    "tags": [
+      "crime",
+      "literary"
+    ],
+    "moods": [
+      "dark",
+      "mysterious",
+      "reflective"
+    ],
+    "pace": "medium-paced",
+    "review": [],
+    "cover": "https://covers.openlibrary.org/b/id/10087844-M.jpg",
+    "color": "#23529c"
+  },
+  {
+    "title": "There Is No Antimemetics Division",
+    "author": "qntm",
+    "year": 2020,
+    "pages": 201,
+    "rating": 3.0,
+    "read": "2026-03-28",
+    "tags": [
+      "horror",
+      "science fiction"
+    ],
+    "moods": [
+      "dark",
+      "mysterious",
+      "tense"
+    ],
+    "pace": "fast-paced",
+    "cover": "https://covers.openlibrary.org/b/id/11457905-M.jpg",
+    "review": [],
+    "color": "#0e355a"
+  },
+  {
+    "title": "Vaim",
+    "author": "Jon Fosse",
+    "year": 2025,
+    "pages": 134,
+    "rating": 3.5,
+    "read": "2026-03-20",
+    "tags": [
+      "literary"
+    ],
+    "moods": [
+      "emotional",
+      "mysterious",
+      "reflective"
+    ],
+    "pace": "slow-paced",
+    "cover": "https://covers.openlibrary.org/b/id/15132307-M.jpg",
+    "review": [],
+    "color": "#0134a0"
+  },
+  {
+    "title": "Private Citizens",
+    "author": "Tony Tulathimutte",
+    "year": 2016,
+    "pages": 384,
+    "rating": 4.0,
+    "read": "2026-03-15",
+    "tags": [
+      "contemporary",
+      "literary"
+    ],
+    "moods": [
+      "dark",
+      "funny"
+    ],
+    "pace": "medium-paced",
+    "cover": "https://covers.openlibrary.org/b/id/13675672-M.jpg",
+    "review": [],
+    "color": "#1f1d1d"
+  },
+  {
+    "title": "Hurricane Season",
+    "author": "Fernanda Melchor",
+    "year": 2017,
+    "pages": 224,
+    "rating": 4.75,
+    "read": "2026-03-10",
+    "tags": [
+      "horror",
+      "literary"
+    ],
+    "moods": [
+      "challenging",
+      "dark",
+      "tense"
+    ],
+    "pace": "medium-paced",
+    "review": [],
+    "cover": "https://covers.openlibrary.org/b/id/12382342-M.jpg",
+    "color": "#0335a1"
+  },
+  {
+    "title": "On the Calculation of Volume I",
+    "author": "Solvej Balle",
+    "year": 2020,
+    "pages": 161,
+    "rating": 3.5,
+    "read": "2026-01-26",
+    "tags": [
+      "literary",
+      "speculative fiction"
+    ],
+    "moods": [
+      "mysterious",
+      "reflective"
+    ],
+    "pace": "slow-paced",
+    "review": [],
+    "cover": "https://covers.openlibrary.org/b/id/15221011-M.jpg",
+    "color": "#c7a406"
+  },
+  {
+    "title": "The New York Trilogy",
+    "author": "Paul Auster",
+    "year": 1987,
+    "pages": 308,
+    "rating": 4.0,
+    "read": "2026-01-20",
+    "tags": [
+      "contemporary",
+      "literary",
+      "mystery"
+    ],
+    "moods": [
+      "challenging",
+      "dark",
+      "mysterious"
+    ],
+    "pace": "medium-paced",
+    "cover": "https://covers.openlibrary.org/b/id/9089708-M.jpg",
+    "review": [],
+    "color": "#c7c234"
+  },
+  {
+    "title": "Foster",
+    "author": "Claire Keegan",
+    "year": 2010,
+    "pages": 89,
+    "rating": 3.0,
+    "read": "2026-01-07",
+    "tags": [
+      "literary"
+    ],
+    "moods": [
+      "emotional",
+      "reflective",
+      "sad"
+    ],
+    "pace": "fast-paced",
+    "cover": "https://covers.openlibrary.org/b/id/15222477-M.jpg",
+    "review": [],
+    "color": "#516867"
+  },
+  {
+    "title": "James",
+    "author": "Percival Everett",
+    "year": 2024,
+    "pages": 303,
+    "rating": 4.5,
+    "read": "2025-11-23",
+    "tags": [
+      "historical",
+      "literary"
+    ],
+    "moods": [
+      "adventurous",
+      "emotional",
+      "tense"
+    ],
+    "pace": "fast-paced",
+    "cover": "https://covers.openlibrary.org/b/id/15095853-M.jpg",
+    "review": [],
+    "color": "#c75e35"
+  },
+  {
+    "title": "Chain-Gang All-Stars",
+    "author": "Nana Kwame Adjei-Brenyah",
+    "year": 2023,
+    "pages": 363,
+    "rating": 4.0,
+    "read": "2025-11-23",
+    "tags": [
+      "dystopian",
+      "lgbtqia+",
+      "literary"
+    ],
+    "moods": [
+      "challenging",
+      "dark",
+      "tense"
+    ],
+    "pace": "medium-paced",
+    "cover": "https://covers.openlibrary.org/b/id/13334374-M.jpg",
+    "review": [],
+    "color": "#35c73b"
+  },
+  {
+    "title": "Project Hail Mary",
+    "author": "Andy Weir",
+    "year": 2021,
+    "pages": 476,
+    "rating": 4.5,
+    "read": "2025-11-01",
+    "tags": [
+      "science fiction"
+    ],
+    "moods": [
+      "adventurous",
+      "funny",
+      "hopeful"
+    ],
+    "pace": "medium-paced",
+    "cover": "https://covers.openlibrary.org/b/id/14433087-M.jpg",
+    "review": [],
+    "color": "#2371b3"
+  },
+  {
+    "title": "The Crying of Lot 49",
+    "author": "Thomas Pynchon",
+    "year": 1966,
+    "pages": 152,
+    "rating": 4.0,
+    "read": "2025-10-25",
+    "tags": [
+      "classics",
+      "literary"
+    ],
+    "moods": [
+      "challenging",
+      "funny",
+      "mysterious"
+    ],
+    "pace": "medium-paced",
+    "cover": "https://covers.openlibrary.org/b/id/39754-M.jpg",
+    "review": [],
+    "color": "#c71631"
+  },
+  {
+    "title": "The God of Small Things",
+    "author": "Arundhati Roy",
+    "year": 1997,
+    "pages": 321,
+    "rating": 4.0,
+    "read": "2025-10-15",
+    "tags": [
+      "classics",
+      "literary"
+    ],
+    "moods": [
+      "dark",
+      "emotional",
+      "sad"
+    ],
+    "pace": "slow-paced",
+    "cover": "https://covers.openlibrary.org/b/id/10585952-M.jpg",
+    "review": [],
+    "color": "#473719"
+  },
+  {
+    "title": "Flesh",
+    "author": "David Szalay",
+    "year": 2025,
+    "pages": 353,
+    "rating": 4.0,
+    "read": "2025-10-04",
+    "tags": [
+      "contemporary",
+      "literary"
+    ],
+    "moods": [
+      "dark",
+      "reflective",
+      "sad"
+    ],
+    "pace": "medium-paced",
+    "cover": "https://covers.openlibrary.org/b/id/15180002-M.jpg",
+    "review": [],
+    "color": "#749597"
+  },
+  {
+    "title": "The Safekeep",
+    "author": "Yael van der Wouden",
+    "year": 2024,
+    "pages": 262,
+    "rating": 3.75,
+    "read": "2025-08-09",
+    "tags": [
+      "historical",
+      "lgbtqia+",
+      "literary"
+    ],
+    "moods": [
+      "emotional",
+      "reflective",
+      "sad"
+    ],
+    "pace": "medium-paced",
+    "cover": "https://covers.openlibrary.org/b/id/14631041-M.jpg",
+    "review": [],
+    "color": "#9f7c54"
+  },
+  {
+    "title": "Leaving Las Vegas",
+    "author": "John O'Brien",
+    "year": 1990,
+    "pages": 200,
+    "rating": 4.0,
+    "read": "2025-07-31",
+    "tags": [
+      "contemporary",
+      "literary"
+    ],
+    "moods": [
+      "dark",
+      "emotional",
+      "sad"
+    ],
+    "pace": "slow-paced",
+    "cover": "https://covers.openlibrary.org/b/id/568778-M.jpg",
+    "review": [],
+    "color": "#374647"
+  },
+  {
+    "title": "Detransition, Baby",
+    "author": "Torrey Peters",
+    "year": 2021,
+    "pages": 340,
+    "rating": 3.5,
+    "read": "2025-07-25",
+    "tags": [
+      "contemporary",
+      "lgbtqia+",
+      "literary"
+    ],
+    "moods": [
+      "challenging",
+      "emotional",
+      "reflective"
+    ],
+    "pace": "medium-paced",
+    "cover": "https://covers.openlibrary.org/b/id/10201288-M.jpg",
+    "review": [],
+    "color": "#c7779a"
+  },
+  {
+    "title": "The Dark Forest",
+    "author": "Cixin Liu",
+    "year": 2008,
+    "pages": 512,
+    "rating": 4.5,
+    "read": "2025-06-23",
+    "tags": [
+      "science fiction"
+    ],
+    "moods": [
+      "challenging",
+      "dark",
+      "mysterious"
+    ],
+    "pace": "medium-paced",
+    "review": [],
+    "color": "#e49a2b"
+  },
+  {
+    "title": "The Hike",
+    "author": "Drew Magary",
+    "year": 2016,
+    "pages": 278,
+    "rating": 3.5,
+    "read": "2025-06-21",
+    "tags": [
+      "contemporary",
+      "fantasy",
+      "science fiction"
+    ],
+    "moods": [
+      "adventurous",
+      "dark",
+      "funny"
+    ],
+    "pace": "fast-paced",
+    "cover": "https://covers.openlibrary.org/b/id/8876158-M.jpg",
+    "review": [],
+    "color": "#c7c71d"
+  },
+  {
+    "title": "The Three-Body Problem",
+    "author": "Cixin Liu",
+    "year": 2006,
+    "pages": 399,
+    "rating": 4.25,
+    "read": "2025-06-18",
+    "tags": [
+      "science fiction"
+    ],
+    "moods": [
+      "challenging",
+      "dark",
+      "mysterious"
+    ],
+    "pace": "medium-paced",
+    "review": [],
+    "color": "#5cc247"
+  },
+  {
+    "title": "Under the Eye of the Big Bird",
+    "author": "Hiromi Kawakami",
+    "year": 2016,
+    "pages": 278,
+    "rating": 4.0,
+    "read": "2025-06-15",
+    "tags": [
+      "literary",
+      "science fiction"
+    ],
+    "moods": [
+      "mysterious",
+      "reflective"
+    ],
+    "pace": "medium-paced",
+    "review": [],
+    "color": "#80bcc7"
+  },
+  {
+    "title": "String Theory: David Foster Wallace on Tennis",
+    "author": "David Foster Wallace",
+    "year": 2006,
+    "pages": 158,
+    "rating": 4.5,
+    "read": "2025-06-14",
+    "tags": [
+      "nonfiction",
+      "essays",
+      "sports"
+    ],
+    "moods": [
+      "informative",
+      "reflective"
+    ],
+    "pace": "medium-paced",
+    "cover": "https://covers.openlibrary.org/b/id/14337766-M.jpg",
+    "review": [],
+    "color": "#c7af9b"
+  },
+  {
+    "title": "Perfection",
+    "author": "Vincenzo Latronico",
+    "year": 2022,
+    "pages": 115,
+    "rating": 4.5,
+    "read": "2025-06-06",
+    "tags": [
+      "contemporary",
+      "literary"
+    ],
+    "moods": [
+      "reflective"
+    ],
+    "pace": "fast-paced",
+    "cover": "https://covers.openlibrary.org/b/id/14671208-M.jpg",
+    "review": [],
+    "color": "#02339f"
+  },
+  {
+    "title": "Gliff",
+    "author": "Ali Smith",
+    "year": 2024,
+    "pages": 273,
+    "rating": 4.0,
+    "read": "2025-05-26",
+    "tags": [
+      "dystopian",
+      "literary"
+    ],
+    "moods": [
+      "dark",
+      "mysterious",
+      "reflective"
+    ],
+    "pace": "medium-paced",
+    "cover": "https://covers.openlibrary.org/b/id/14841804-M.jpg",
+    "review": [],
+    "color": "#9cc9cc"
+  },
+  {
+    "title": "On the Clock",
+    "author": "Claire Baglin",
+    "year": 2022,
+    "pages": 97,
+    "rating": 3.75,
+    "read": "2025-05-10",
+    "tags": [
+      "contemporary"
+    ],
+    "moods": [
+      "reflective"
+    ],
+    "pace": "fast-paced",
+    "review": []
+  },
+  {
+    "title": "The Memory Police",
+    "author": "Yōko Ogawa",
+    "year": 1994,
+    "pages": 288,
+    "rating": 3.5,
+    "read": "2025-05-05",
+    "tags": [
+      "dystopian",
+      "fantasy",
+      "literary",
+      "science fiction"
+    ],
+    "moods": [
+      "dark",
+      "reflective",
+      "sad"
+    ],
+    "pace": "slow-paced",
+    "cover": "https://covers.openlibrary.org/b/id/15223719-M.jpg",
+    "review": [],
+    "color": "#c76753"
+  },
+  {
+    "title": "Piranesi",
+    "author": "Susanna Clarke",
+    "year": 2020,
+    "pages": 245,
+    "rating": 4.0,
+    "read": "2025-03-29",
+    "tags": [
+      "fantasy",
+      "literary"
+    ],
+    "moods": [
+      "adventurous",
+      "mysterious",
+      "reflective"
+    ],
+    "pace": "medium-paced",
+    "cover": "https://covers.openlibrary.org/b/id/15268930-M.jpg",
+    "review": [],
+    "color": "#344093"
+  },
+  {
+    "title": "If Beale Street Could Talk",
+    "author": "James Baldwin",
+    "year": 1974,
+    "pages": 197,
+    "rating": 4.5,
+    "read": "2025-03-18",
+    "tags": [
+      "classics",
+      "literary"
+    ],
+    "moods": [
+      "emotional",
+      "reflective",
+      "sad"
+    ],
+    "pace": "medium-paced",
+    "cover": "https://covers.openlibrary.org/b/id/12700357-M.jpg",
+    "review": [],
+    "color": "#3f5050"
+  },
+  {
+    "title": "A Short Stay in Hell",
+    "author": "Steven L. Peck",
+    "year": 2011,
+    "pages": 104,
+    "rating": 3.0,
+    "read": "2025-03-11",
+    "tags": [
+      "horror",
+      "literary"
+    ],
+    "moods": [
+      "dark",
+      "reflective",
+      "sad"
+    ],
+    "pace": "fast-paced",
+    "cover": "https://covers.openlibrary.org/b/id/13012357-M.jpg",
+    "review": [],
+    "color": "#a68b73"
+  },
+  {
+    "title": "On Earth We're Briefly Gorgeous",
+    "author": "Ocean Vuong",
+    "year": 2019,
+    "pages": 246,
+    "rating": 3,
+    "read": "2026-01",
+    "tags": [
+      "contemporary",
+      "lgbtqia+",
+      "literary"
+    ],
+    "moods": [
+      "emotional",
+      "reflective",
+      "sad"
+    ],
+    "pace": "slow-paced",
+    "cover": "https://covers.openlibrary.org/b/id/10030425-M.jpg",
+    "review": [],
+    "color": "#c5651c"
+  },
+  {
+    "title": "Rejection",
+    "author": "Tony Tulathimutte",
+    "year": 2024,
+    "pages": 258,
+    "rating": 4.5,
+    "read": "2025-02-17",
+    "tags": [
+      "contemporary",
+      "literary",
+      "short stories"
+    ],
+    "moods": [
+      "challenging",
+      "dark",
+      "funny"
+    ],
+    "pace": "medium-paced",
+    "cover": "https://covers.openlibrary.org/b/id/15234428-M.jpg",
+    "review": [],
+    "color": "#338b8e"
+  },
+  {
+    "title": "The Vegetarian",
+    "author": "Han Kang",
+    "year": 2007,
+    "pages": 187,
+    "rating": 3.5,
+    "read": "2025-02-14",
+    "tags": [
+      "contemporary",
+      "literary"
+    ],
+    "moods": [
+      "dark",
+      "sad",
+      "tense"
+    ],
+    "pace": "medium-paced",
+    "review": [],
+    "cover": "https://covers.openlibrary.org/b/id/10352238-M.jpg",
+    "color": "#5c274a"
+  },
+  {
+    "title": "Grief Is the Thing with Feathers",
+    "author": "Max Porter",
+    "year": 2015,
+    "pages": 114,
+    "rating": 3.5,
+    "read": "2025-02-13",
+    "tags": [
+      "literary",
+      "magical realism"
+    ],
+    "moods": [
+      "emotional",
+      "reflective",
+      "sad"
+    ],
+    "pace": "fast-paced",
+    "cover": "https://covers.openlibrary.org/b/id/13317060-M.jpg",
+    "review": [],
+    "color": "#c7b69b"
+  },
+  {
+    "title": "Martyr!",
+    "author": "Kaveh Akbar",
+    "year": 2024,
+    "pages": 331,
+    "rating": 5.0,
+    "read": "2025-02-08",
+    "tags": [
+      "lgbtqia+",
+      "literary"
+    ],
+    "moods": [
+      "dark",
+      "emotional",
+      "reflective"
+    ],
+    "pace": "medium-paced",
+    "cover": "https://covers.openlibrary.org/b/id/15224902-M.jpg",
+    "review": [],
+    "color": "#c72933"
+  },
+  {
+    "title": "Monstrilio",
+    "author": "Gerardo Sámano Córdova",
+    "year": 2023,
+    "pages": 326,
+    "rating": 4.0,
+    "read": "2025-01-15",
+    "tags": [
+      "horror",
+      "lgbtqia+",
+      "literary",
+      "magical realism"
+    ],
+    "moods": [
+      "dark",
+      "emotional",
+      "sad"
+    ],
+    "pace": "medium-paced",
+    "cover": "https://covers.openlibrary.org/b/id/13684942-M.jpg",
+    "review": [],
+    "color": "#9b6aa5"
+  },
+  {
+    "title": "Stoner",
+    "author": "John Williams",
+    "year": 1965,
+    "pages": 278,
+    "rating": 4.75,
+    "read": "2025-01-12",
+    "tags": [
+      "classics",
+      "historical",
+      "literary"
+    ],
+    "moods": [
+      "emotional",
+      "reflective",
+      "sad"
+    ],
+    "pace": "medium-paced",
+    "cover": "https://covers.openlibrary.org/b/id/8132138-M.jpg",
+    "review": [],
+    "color": "#354745"
+  },
+  {
+    "title": "Orbital",
+    "author": "Samantha Harvey",
+    "year": 2023,
+    "pages": 207,
+    "rating": 4.0,
+    "read": "2025-01-08",
+    "tags": [
+      "literary",
+      "science fiction"
+    ],
+    "moods": [
+      "inspiring",
+      "reflective"
+    ],
+    "pace": "slow-paced",
+    "cover": "https://covers.openlibrary.org/b/id/14541972-M.jpg",
+    "review": [],
+    "color": "#1d679e"
+  },
+  {
+    "title": "Giovanni's Room",
+    "author": "James Baldwin",
+    "year": 1956,
+    "pages": 159,
+    "rating": 4.5,
+    "read": "2025-01-05",
+    "tags": [
+      "classics",
+      "lgbtqia+",
+      "literary"
+    ],
+    "moods": [
+      "emotional",
+      "reflective",
+      "sad"
+    ],
+    "pace": "medium-paced",
+    "cover": "https://covers.openlibrary.org/b/id/7115928-M.jpg",
+    "review": [],
+    "color": "#9b1b3a"
+  },
+  {
+    "title": "As The Eagle Flies",
+    "author": "Nolwenn Le Blevennec",
+    "year": 2021,
+    "pages": 155,
+    "rating": 4.0,
+    "read": "2024-03-31",
+    "tags": [
+      "literary"
+    ],
+    "moods": [],
+    "pace": "medium-paced",
+    "review": []
+  },
+  {
+    "title": "The New Life",
+    "author": "Tom Crewe",
+    "year": 2023,
+    "pages": 376,
+    "rating": 3.0,
+    "read": "2024-03-31",
+    "tags": [
+      "historical",
+      "lgbtqia+",
+      "literary"
+    ],
+    "moods": [
+      "emotional",
+      "reflective"
+    ],
+    "pace": "slow-paced",
+    "review": []
+  },
+  {
+    "title": "In Ascension",
+    "author": "Martin MacInnes",
+    "year": 2023,
+    "pages": 512,
+    "rating": 3.5,
+    "read": "2024-02-20",
+    "tags": [
+      "literary",
+      "mystery",
+      "science fiction"
+    ],
+    "moods": [
+      "adventurous",
+      "mysterious",
+      "reflective"
+    ],
+    "pace": "medium-paced",
+    "cover": "https://covers.openlibrary.org/b/id/14545093-M.jpg",
+    "review": [],
+    "color": "#464738"
+  },
+  {
+    "title": "Poor Things",
+    "author": "Alasdair Gray",
+    "year": 1992,
+    "pages": 336,
+    "rating": 4.5,
+    "read": "2023-10-14",
+    "tags": [
+      "fantasy",
+      "historical",
+      "literary"
+    ],
+    "moods": [
+      "adventurous",
+      "dark",
+      "funny"
+    ],
+    "pace": "medium-paced",
+    "cover": "https://covers.openlibrary.org/b/id/487903-M.jpg",
+    "review": [],
+    "color": "#c6614e"
+  },
+  {
+    "title": "Bliss Montage",
+    "author": "Ling Ma",
+    "year": 2022,
+    "pages": 228,
+    "rating": 0,
+    "read": "",
+    "tags": [
+      "literary",
+      "magical realism",
+      "short stories"
+    ],
+    "moods": [
+      "dark",
+      "reflective"
+    ],
+    "pace": "medium-paced",
+    "cover": "https://covers.openlibrary.org/b/id/13195487-M.jpg",
+    "review": [],
+    "color": "#c76212"
+  },
+  {
+    "title": "How High We Go in the Dark",
+    "author": "Sequoia Nagamatsu",
+    "year": 2022,
+    "pages": 292,
+    "rating": 4.5,
+    "read": "",
+    "tags": [
+      "dystopian",
+      "literary",
+      "science fiction"
+    ],
+    "moods": [
+      "emotional",
+      "reflective",
+      "sad"
+    ],
+    "pace": "medium-paced",
+    "cover": "https://covers.openlibrary.org/b/id/15116675-M.jpg",
+    "review": [],
+    "color": "#47442b"
+  },
+  {
+    "title": "When We Cease to Understand the World",
+    "author": "Benjamín Labatut",
+    "year": 2020,
+    "pages": 192,
+    "rating": 4.5,
+    "read": "",
+    "tags": [
+      "historical",
+      "literary",
+      "short stories"
+    ],
+    "moods": [
+      "challenging",
+      "informative",
+      "reflective"
+    ],
+    "pace": "medium-paced",
+    "review": [],
+    "cover": "https://covers.openlibrary.org/b/id/15135995-M.jpg",
+    "color": "#514e18"
+  },
+  {
+    "title": "White Noise",
+    "author": "Don DeLillo",
+    "year": 1985,
+    "pages": 310,
+    "rating": 4.75,
+    "read": "",
+    "tags": [
+      "classics",
+      "literary"
+    ],
+    "moods": [
+      "dark",
+      "funny",
+      "reflective"
+    ],
+    "pace": "medium-paced",
+    "cover": "https://covers.openlibrary.org/b/id/9426073-M.jpg",
+    "review": [],
+    "color": "#2ca3a0"
+  },
+  {
+    "title": "Land of Milk and Honey",
+    "author": "C Pam Zhang",
+    "year": 2023,
+    "pages": 232,
+    "rating": 3.5,
+    "read": "",
+    "tags": [
+      "dystopian",
+      "lgbtqia+",
+      "literary"
+    ],
+    "moods": [
+      "dark",
+      "mysterious",
+      "reflective"
+    ],
+    "pace": "medium-paced",
+    "cover": "https://covers.openlibrary.org/b/id/13909882-M.jpg",
+    "review": [],
+    "color": "#175b42"
+  },
+  {
+    "title": "Klara and the Sun",
+    "author": "Kazuo Ishiguro",
+    "year": 2021,
+    "pages": 303,
+    "rating": 3.5,
+    "read": "",
+    "tags": [
+      "dystopian",
+      "literary",
+      "science fiction"
+    ],
+    "moods": [
+      "emotional",
+      "reflective"
+    ],
+    "pace": "medium-paced",
+    "cover": "https://covers.openlibrary.org/b/id/14637495-M.jpg",
+    "review": [],
+    "color": "#c7432b"
+  },
+  {
+    "title": "Cosmopolis",
+    "author": "Don DeLillo",
+    "year": 2003,
+    "pages": 209,
+    "rating": 2.75,
+    "read": "",
+    "tags": [
+      "contemporary"
+    ],
+    "moods": [
+      "challenging",
+      "reflective"
+    ],
+    "pace": "slow-paced",
+    "cover": "https://covers.openlibrary.org/b/id/10098876-M.jpg",
+    "review": [],
+    "color": "#471e1c"
+  },
+  {
+    "title": "Helen of Nowhere",
+    "author": "Makenna Goodman",
+    "rating": 2.5,
+    "read": "2026-07",
+    "tags": [],
+    "cover": "https://covers.openlibrary.org/b/id/15243727-M.jpg",
+    "review": [],
+    "color": "#0b3e8e"
+  },
+  {
+    "title": "Siddhartha",
+    "author": "Hermann Hesse",
+    "year": 1922,
+    "pages": 139,
+    "rating": 4.5,
+    "read": "2026-11",
+    "tags": [],
+    "cover": "https://covers.openlibrary.org/b/id/7906264-M.jpg",
+    "review": [],
+    "color": "#a63a30"
+  },
+  {
+    "title": "Prophet Song",
+    "author": "Paul Lynch",
+    "year": 2023,
+    "pages": 259,
+    "rating": 3,
+    "read": "2026-07",
+    "tags": [],
+    "cover": "https://covers.openlibrary.org/b/id/14814200-M.jpg",
+    "review": [],
+    "color": "#c75537"
+  },
+  {
+    "title": "Stag Dance",
+    "author": "Torrey Peters",
+    "year": 2025,
+    "pages": 304,
+    "rating": 3.5,
+    "read": "2026-07",
+    "tags": [],
+    "cover": "https://covers.openlibrary.org/b/id/15090735-M.jpg",
+    "review": [],
+    "color": "#ad8759"
+  },
+  {
+    "title": "Transcription",
+    "author": "Ben Lerner",
+    "year": 2026,
+    "rating": 4,
+    "read": "2026-10",
+    "tags": [],
+    "cover": "https://covers.openlibrary.org/b/id/15247551-M.jpg",
+    "review": [],
+    "color": "#333d47"
+  },
+  {
+    "title": "Leaving the Atocha Station",
+    "author": "Ben Lerner",
+    "year": 2011,
+    "pages": 200,
+    "rating": 3.5,
+    "read": "2026-10",
+    "tags": [],
+    "cover": "https://covers.openlibrary.org/b/id/10310621-M.jpg",
+    "review": [],
+    "color": "#8e4a2a"
+  },
+  {
+    "title": "Cursed Bunny",
+    "author": "Bora Chung",
+    "year": 2021,
+    "pages": 248,
+    "rating": 3.5,
+    "read": "2026-09",
+    "tags": [],
+    "review": [],
+    "color": "#6b5fa6"
+  },
+  {
+    "title": "The End of Everything",
+    "author": "M. John Harrison",
+    "year": 2026,
+    "pages": 208,
+    "rating": 3.5,
+    "read": "2026-10",
+    "cover": "https://covers.openlibrary.org/b/id/15239006-M.jpg",
+    "tags": [],
+    "review": [],
+    "color": "#16161a"
+  },
+  {
+    "title": "London Falling",
+    "author": "Patrick Radden Keefe",
+    "year": 2026,
+    "rating": 4.5,
+    "read": "2026-08",
+    "cover": "https://covers.openlibrary.org/b/id/15254324-M.jpg",
+    "tags": [],
+    "review": [],
+    "color": "#4e532b",
+    "pages": 384
+  },
+  {
+    "title": "Black Bag",
+    "author": "Luke Kennard",
+    "year": 2026,
+    "pages": 347,
+    "rating": 3.5,
+    "read": "2026-08",
+    "cover": "https://covers.openlibrary.org/b/id/15243725-M.jpg",
+    "tags": [],
+    "review": [],
+    "color": "#c7066d"
+  },
+  {
+    "title": "Fruit Fly",
+    "author": "Josh Silver",
+    "year": 2026,
+    "pages": 372,
+    "rating": 1.5,
+    "read": "2026-09",
+    "tags": [],
+    "review": [],
+    "color": "#85c703"
+  }
+]

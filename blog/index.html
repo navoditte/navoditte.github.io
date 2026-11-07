@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/reviews.css">
 </head>
 <body>
   <div class="wrapper">
@@ -21,35 +22,57 @@
 
     <main>
       <h1>Reviews</h1>
-      <p class="tagline">Books, movies, albums, or other media.</p>
+      <p class="tagline">Books I've read. Click a spine for the review.</p>
 
-      <!--
-        Add one review-entry per review, newest first, e.g.:
+      <section class="charts" aria-label="Reading stats">
+        <figure class="chart">
+          <figcaption>Ratings</figcaption>
+          <div id="chart-ratings"></div>
+        </figure>
+        <figure class="chart">
+          <figcaption>Books per month</figcaption>
+          <div id="chart-months"></div>
+        </figure>
+      </section>
 
-        <div class="review-entry">
-          <span class="review-category">Book</span>
-          <h3><a class="title-link" href="posts/your-review.html">Title</a></h3>
-          <span class="review-rating">★★★★☆</span>
-          <p class="excerpt">One-line summary of your take.</p>
+      <div class="controls">
+        <label for="sort">Sort</label>
+        <select id="sort"></select>
+        <div class="tag-menu" id="tag-menu" hidden>
+          <button type="button" class="tag-btn" id="tag-btn" aria-haspopup="true" aria-expanded="false" aria-controls="tag-panel">
+            Genre / theme <span class="tag-badge" id="tag-badge"></span> <span aria-hidden="true">▾</span>
+          </button>
+          <div class="tag-panel" id="tag-panel" hidden role="group" aria-label="Filter by genre or theme (books must have all selected)">
+            <div class="tag-panel-head">
+              <span>Must have all selected</span>
+              <button type="button" class="tag-clear" id="tag-clear" hidden>Clear</button>
+            </div>
+            <div class="tag-list" id="tag-list"></div>
+          </div>
         </div>
-
-        Category is free text: Book, Movie, or Album.
-        Copy blog/posts/example-post.html as a starting template for new reviews.
-      -->
-
-      <div class="review-entry">
-        <span class="review-category">📚 Book</span>
-        <h3><a class="title-link" href="posts/reflections-in-a-golden-eye.html">Reflections in a Golden Eye (Carson McCullers)</a></h3>
-        <span class="review-rating">★★★★☆</span>
-        <p class="excerpt">Short and extremely sweet.</p>
+        <div class="view-toggle" id="views" role="group" aria-label="View">
+          <button type="button" data-view="shelf" aria-pressed="true">Shelf</button>
+          <button type="button" data-view="list" aria-pressed="false">List</button>
+        </div>
       </div>
+      <p class="count" id="count" aria-live="polite"></p>
+
+      <div id="shelf" class="shelf"></div>
+      <noscript><p class="empty-state">The shelf needs JavaScript. The raw list lives in <a href="../data/books.json">books.json</a>.</p></noscript>
     </main>
 
+    <div class="backdrop" id="backdrop"></div>
+    <aside class="panel" id="panel" role="dialog" aria-modal="true" aria-labelledby="panel-title" aria-hidden="true" inert>
+      <button type="button" class="panel-close" id="panel-close" aria-label="Close review">&times;</button>
+      <div id="panel-body"></div>
+    </aside>
+
     <footer class="site-footer">
-      &copy; 2026 navodite
+      &copy; 2026 navoditte
     </footer>
   </div>
 
+  <script src="../js/reviews.js" defer></script>
   <script src="../js/leaf.js" defer></script>
 </body>
 </html>
